@@ -22,3 +22,15 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+
+import { Todo } from './todo.js';
+let data = {
+  id: 7,
+  text: "hond uitlaten",
+  timestamp: "2024",
+  status: "not completed"
+}
+
+let listEl = document.getElementById("#list");
+
+let todo = new Todo(data, listEl);
